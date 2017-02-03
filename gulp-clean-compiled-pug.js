@@ -1,20 +1,18 @@
 var through = require('through2');
 var del = require('del');
 
-function gulpCleanCompiledTypescript() {
+function gulpCleanCompiledPug() {
     return through.obj(function(file, encoding, callback) {
-        var regex = /.(ts|tsx)$/;
+        var regex = /.(pug|jade)$/;
 
         if (regex.test(file.path)) {
-            var compiledFile = file.path.replace(regex, '.js');
-            var mapFile = file.path.replace(regex, '.js.map');
-            var typeInformation = file.path.replace(regex, '.d.ts');
+            var compiledFile = file.path.replace(regex, '.html');
 
-            del.sync([compiledFile, mapFile, typeInformation]);
+            del.sync([compiledFile]);
         }
 
         callback();
     });
 }
 
-module.exports = gulpCleanCompiledTypescript;
+module.exports = gulpCleanCompiledPug;
