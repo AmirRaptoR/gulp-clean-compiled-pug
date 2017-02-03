@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/AmirRaptoR/gulp-clean-compiled-pug.git"
   },
-  "author": "amirraptor",
+  "author": "Amirreza Moghassemi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AmirRaptoR/gulp-clean-compiled-pug/issues"
