@@ -1,0 +1,29 @@
+{
+  "name": "gulp-clean-compiled-pug",
+  "version": "1.0.0",
+  "description": "gulp plugin for cleaning compiled pug/jade files",
+  "main": "gulp-clean-compiled-pug.js",
+  "keywords": [
+    "pug",
+    "jade",
+    "html",
+    "gulp"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirRaptoR/gulp-clean-compiled-pug.git"
+  },
+  "author": "amirraptor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmirRaptoR/gulp-clean-compiled-pug/issues"
+  },
+  "homepage": "https://github.com/AmirRaptoR/gulp-clean-compiled-pug#readme",
+  "dependencies": {
+    "del": "^2.2.2",
+    "through2": "^2.0.3"
+  }
+}
